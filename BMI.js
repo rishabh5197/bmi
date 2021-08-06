@@ -18,10 +18,15 @@
 
 window.onload = () => {
     let button = document.querySelector("#check");
-  
+    let refresh1 = document.querySelector("#refresh");
     // Function for calculating BMI
     button.addEventListener("click", check);
+    refresh1.addEventListener("refresh", refreshPage);
 };
+
+function refreshPage(){
+    window.location.reload();
+} 
 
 function check()
 {
