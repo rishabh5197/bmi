@@ -56,7 +56,7 @@ function check()
 
     console.log(height, heightopt)
     
-    document.getElementById('div').innerHTML +="<b>"+""+ (weight / (height*height))+"</b>"
+    document.getElementById('div').innerHTML +='<b>'+""+(weight / (height*height))+'</b>'
     let bodymassindex = weight / (height*height)
     console.log(bodymassindex)
 
