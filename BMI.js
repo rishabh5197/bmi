@@ -56,7 +56,7 @@ function check()
 
     console.log(height, heightopt)
     
-    document.getElementById('div').innerHTML +='<b>'+""+(weight / (height*height))+'</b>'
+    document.getElementById('div').innerHTML +=(weight / (height*height))
     let bodymassindex = weight / (height*height)
     console.log(bodymassindex)
 
@@ -64,42 +64,42 @@ function check()
     {
         // document.write("Under Weight")
         console.log("Under Weight")
-        document.getElementById('div').innerHTML += '<b>'+""+" is BMI so"+" Under Weight"+'</b>'
+        document.getElementById('div').innerHTML += " is BMI so"+" Under Weight"
     }
     else if(bodymassindex >= 18.5 && bodymassindex <= 24.9)
     {
         // document.write("Normal Weight")
         console.log("Normal Weight")
-        document.getElementById('div').innerHTML += '<b>'+""+" is BMI so"+" Normal Weight"+'</b>'
+        document.getElementById('div').innerHTML += " is BMI so"+" Normal Weight"
     }
     else if(bodymassindex >= 25.0 && bodymassindex <=29.9 )
     {   
         // document.write("Over Weight")
         console.log("Over Weight")
-        document.getElementById('div').innerHTML += '<b>'+""+" is BMI so"+" Over Weight"+'</b>'
+        document.getElementById('div').innerHTML += " is BMI so"+" Over Weight"
     }
     else
     {
         // document.write("Obese ")
         console.log("Obese ")
-        document.getElementById('div').innerHTML += '<b>'+""+" is BMI so"+" Obese "+'</b>'
+        document.getElementById('div').innerHTML += " is BMI so"+" Obese "
         if(bodymassindex >= 30.0 && bodymassindex <=34.9)
         {
             // document.write("Class 1 ")
             console.log("Class 1")
-            document.getElementById('div').innerHTML += '<b>'+"and Class 1"+'</b>'
+            document.getElementById('div').innerHTML += "and Class 1"
         }
         else if(bodymassindex >= 35.0 && bodymassindex <=39.9 )
         {
             // document.write("Class 2")
             console.log("Class 2")
-            document.getElementById('div').innerHTML += '<b>'+"and Class 2"+'</b>'
+            document.getElementById('div').innerHTML += "and Class 2"
         }
         else
         {
             // document.write("Class 3")
             console.log("Class 3")
-            document.getElementById('div').innerHTML += '<b>'+"and Class 3"+'</b>'
+            document.getElementById('div').innerHTML += "and Class 3"+'</b>'
         }
     }
 }
