@@ -56,7 +56,7 @@ function check()
 
     console.log(height, heightopt)
     
-    document.getElementById('div').innerHTML += weight / (height*height)
+    document.getElementById('div').innerHTML +="<b>"+ (weight / (height*height))+"</b>"
     let bodymassindex = weight / (height*height)
     console.log(bodymassindex)
 
@@ -82,7 +82,7 @@ function check()
     {
         // document.write("Obese ")
         console.log("Obese ")
-        document.getElementById('div').innerHTML += '<b>'+""+" is BMI so"+" Obese "+'</b>'
+        document.getElementById('div').innerHTML += ""+" is BMI so"+" <b>Obese "+'</b>'
         if(bodymassindex >= 30.0 && bodymassindex <=34.9)
         {
             // document.write("Class 1 ")
