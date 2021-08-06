@@ -6,8 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="BMI.js"></script>
-</head>
-<body>
+    <style>
     
+    td{
+        padding:25px;
+        padding-left: 10px;
+        
+    }
+
+    input{
+        /* background-color:red; */
+        color:black;
+        font-size:20px;
+        font-weight:bold;
+    }
+
+    .options{
+        padding:3px;
+        background-color: green;
+        color:white;
+        font-size:15px;
+        border-radius: 15px;
+        border: 1px solid white;
+    }
+    
+</style>
+</head>
+<body style="background-color: rgba(222, 184, 135, 0.774);">
+    <div align="center">
+        <table align="center" style="background-color:rgb(38, 94, 199)" >
+            <tr>
+                <td style="font-size:20px;color:white;">Weight </td>
+                <td><input type="text" name="" id="weight"  style="border-radius:5px"></td>
+                <td><select name="weight" id="weightunits" class="options" >
+                    <option value="Kilo Grams" selected>Kilo Grams</option>
+                    <option value="Grams">Grams</option></td>
+                </select>
+            </tr>
+                <td style="font-size:20px;color:white;">Height </td>
+                <td ><input type="text" name="" id="height" style="border-radius:5px"></td>
+                <td><select name="height" id="heightunits" class="options" >
+                    <option value="Meters" selected >Meters</option>
+                    <option value="centi-meters" >centi-meters</option></td>
+                </select>
+            </tr>
+            <tr>
+                <td align="center" colspan="3"><input type="button"  id = "check" value="Click to Check status" style="padding:10px;background-color: palevioletred;font-size: 15px;color: white;border: 1px solid white;"><td>
+           </tr>   
+           <tr>
+                <td align="center" colspan="3" style="color:orange;font-size: 25px;">
+                    <div id="div">Result:</div>
+                </td>
+            </tr>  
+            
+        </table>
+    </div>
+
+
+
+
+
+    
+<!--     
+    
+    
+    <br>
+    <div id="div">Result:</div>
+     -->
+
 </body>
 </html>
