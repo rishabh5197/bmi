@@ -16,6 +16,9 @@
 // console.log(bodymassindex)
 
 
+
+
+
 window.onload = () => {
     let button = document.querySelector("#check");
     let refresh1 = document.querySelector("#refresh");
@@ -37,6 +40,9 @@ function check()
     if (weightopt == "Grams") {
         weight = weight/1000
     }
+    else if(weightopt == "lbs"){
+        weight = (weight*0.45359237)
+    }
     else {
         // pass
     }
@@ -49,6 +55,10 @@ function check()
 
     if (heightopt == "centi-meters") {
         height = height/100
+    }
+    else if (heightopt == "inches") {
+        height = height/39.370
+        height = height*height
     }
     else {
         // pass
